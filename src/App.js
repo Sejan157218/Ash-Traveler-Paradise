@@ -28,22 +28,6 @@ function App() {
       <AuthProvider>
         <Router>
           <Header></Header>
-          <Link to="/">
-            Home
-          </Link>
-          <Link to="/addplaces">
-            Add places
-          </Link>
-          <Link to="/orders">
-            Orders
-          </Link>
-          <Link to="/myorders">
-            My Orders
-          </Link>
-          <Link to="/login">
-            Login
-          </Link>
-
           <Switch>
             <Route exact path="/">
               <Home></Home>
@@ -54,23 +38,20 @@ function App() {
             <Route path="/addplaces">
               <Addplaces></Addplaces>
             </Route>
-            <Route path="/addplaces">
-              <Addplaces></Addplaces>
-            </Route>
             <Route path="/aboutus">
-           <AboutPage></AboutPage>
+              <AboutPage></AboutPage>
             </Route>
             <Route path="/orders">
               <AllOrders></AllOrders>
             </Route>
             <Route path="/contact">
-             <Contactus></Contactus>
+              <Contactus></Contactus>
             </Route>
             <Route path="/blogs">
-             <Blogs></Blogs>
+              <Blogs></Blogs>
             </Route>
             <Route path="/gallery">
-            <Gallery></Gallery>
+              <Gallery></Gallery>
             </Route>
             <PrivateRoute path="/myorders">
               <MyOrder></MyOrder>
@@ -81,7 +62,7 @@ function App() {
           </Switch>
           <Footer></Footer>
         </Router>
-        
+
       </AuthProvider>
 
     </div>

@@ -4,9 +4,7 @@ import "./AboutUS.css"
 const AboutUS = () => {
     return (
 <div>
-
-
-<div class="card-about">
+<div class="card-about container">
   <div class="thumbnail"><img class="left" src="https://cdn.photographylife.com/wp-content/uploads/2017/01/What-is-landscape-photography.jpg"/></div>
   <div class="right">
     <h1>Why you Need More Magnesium in Your Daily Diet</h1>

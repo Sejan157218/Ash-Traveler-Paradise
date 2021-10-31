@@ -3,7 +3,7 @@
 .card-about {
   position: relative;
   height: 450px;
-  width: 900px;
+  width: 100%;
   margin: 200px auto;
   background-color: #FFF;
   -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);

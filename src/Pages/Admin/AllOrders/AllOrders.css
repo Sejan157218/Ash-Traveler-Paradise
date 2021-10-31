@@ -1,0 +1,24 @@
+.update-btn{
+    background: #1ec6b6;
+    color: #fff;
+    display: inline-block;
+    font-family: "Rubik",sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border: 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .1s;
+    cursor: pointer;
+}
+
+.update-btn:hover{
+    background: #ff4a52;
+    color: #fff!important;
+}

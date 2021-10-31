@@ -10,15 +10,15 @@ const Header = () => {
     return (
         <Navbar expand="lg">
             <Container>
-                <Navbar.Brand href="#home">𝓐𝓢𝓗 𝓣𝓻𝓪𝓿𝓮𝓵𝓮𝓻 𝓟𝓪𝓻𝓪𝓭𝓲𝓼𝓮</Navbar.Brand>
+                <Navbar.Brand as={HashLink} to="/">𝓐𝓢𝓗 𝓣𝓻𝓪𝓿𝓮𝓵𝓮𝓻 𝓟𝓪𝓻𝓪𝓭𝓲𝓼𝓮</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link as={HashLink} to="/">Home</Nav.Link>
-                        <Nav.Link as={HashLink} to="/">About</Nav.Link>
-                        <Nav.Link as={HashLink} to="/">Destination</Nav.Link>
-                        <Nav.Link as={HashLink} to="/"> Blog</Nav.Link>
-                        <Nav.Link as={HashLink} to="/">Contact</Nav.Link>
+                        <Nav.Link as={HashLink} to="/aboutus">About</Nav.Link>
+                        <Nav.Link as={HashLink} to="/gallery">Gallery</Nav.Link>
+                        <Nav.Link as={HashLink} to="/blogs"> Blog</Nav.Link>
+                        <Nav.Link as={HashLink} to="/contact">Contact</Nav.Link>
                     </Nav>
                     <Navbar.Collapse className="justify-content-end">
                         <Navbar.Text>
@@ -28,8 +28,10 @@ const Header = () => {
                                         <Nav className="me-auto">
                                             <Nav.Link as={HashLink} to="/">{user?.displayName}</Nav.Link>
                                             <NavDropdown style={{ background: `url('${user?.photoURL}') no-repeat center center`, borderRadius: "50%", width: "40px" }}>
+                                                <NavDropdown.Item as={HashLink} to="/orders">Manage Booking</NavDropdown.Item>
+                                                <NavDropdown.Item as={HashLink} to="/myorders">My Booking</NavDropdown.Item>
+                                                <NavDropdown.Item as={HashLink} to="/addplaces">Add Places</NavDropdown.Item>
                                                 <NavDropdown.Item as={HashLink} to="" onClick={logout}>Sign out <i class="fas fa-sign-out-alt"></i></NavDropdown.Item>
-                                                <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
                                             </NavDropdown>
                                         </Nav>
                                         :

@@ -8,7 +8,7 @@
 
 } */
 
-body .container .card {
+body .containers .card {
   position: relative;
   min-width: 320px;
   height: 440px;
@@ -35,7 +35,7 @@ body .container .card:nth-child(3) .box .content a {
 body .container .card .box {
   position: absolute;
   top: 0px;
- 
+  width: 100%;
   bottom: 0px;
   background: #2a2b2f;
   border-radius: 15px;

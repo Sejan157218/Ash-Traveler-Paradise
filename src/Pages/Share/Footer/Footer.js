@@ -8,15 +8,17 @@ const Footer = () => {
         <div className="footer-container mt-5" >
             <Container className="py-5">
                 <Row>
-                    <Col sm={4} xs={6}><h1>𝓐𝓢𝓗 𝓣𝓻𝓪𝓿𝓮𝓵𝓮𝓻 𝓟𝓪𝓻𝓪𝓭𝓲𝓼𝓮e</h1>
-                        <p>𝓐𝓢𝓗 𝓣𝓻𝓪𝓿𝓮𝓵𝓮𝓻 𝓟𝓪𝓻𝓪𝓭𝓲𝓼𝓮</p>
+                    <Col sm={4} xs={6}><h1>Ash Traveler Paradise</h1>
+                        <p>Travel is the movement of people between distant geographical locations. Travel can be done by foot, bicycle, automobile, train, boat, bus, airplane, ship or other means, with or without luggage, and can be one way or round trip</p>
 
                     </Col>
                     <Col sm={3} xs={6}>
                         <Nav className="flex-column content-footer">
                             <Nav className="flex-column content-footer">
-                                <Nav.Link as={Link} to="/home">Home</Nav.Link>
-                                <Nav.Link as={Link} to="/about">About Us</Nav.Link>
+                                <Nav.Link as={Link} to="/">Home</Nav.Link>
+                                <Nav.Link as={Link} to="/aboutus">About Us</Nav.Link>
+                                <Nav.Link as={Link} to="/gallery" >Gallery</Nav.Link>
+                                <Nav.Link as={Link} to="/blog" >Blog</Nav.Link>
                                 <Nav.Link as={Link} to="/contact" >Contacts</Nav.Link>
 
                             </Nav>
@@ -26,15 +28,15 @@ const Footer = () => {
                     </Col>
                     <Col sm={5} xs={12}>
                         <h1>Photos</h1>
-                        {/* <Row xs={4} md={6} className="g-2">
+                        <Row xs={2} md={6} className="g-2">
                             {Array.from({ length: 4 }).map((_, idx) => (
                                 <Col>
                                     <Card>
-                                        <Card.Img  variant="top" />
+                                        <Card.Img variant="top" src="https://i.ibb.co/g4S0n95/footer.jpg" />
                                     </Card>
                                 </Col>
                             ))}
-                        </Row> */}
+                        </Row>
                     </Col>
                 </Row>
                 <hr style={{ color: "white" }} />

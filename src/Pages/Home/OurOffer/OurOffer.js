@@ -1,24 +1,27 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
-import "./OurOffer.css"
+import { Link } from 'react-router-dom';
+import "./OurOffer.css";
 
-const OurOffer = () => {
+const OurOffer = ({ place }) => {
   return (
     <div>
       <Col>
         <figure class="image-block">
-                <h1>The Beach</h1>
-                <img src="https://images.pexels.com/photos/1680140/pexels-photo-1680140.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
-                <figcaption>
-                    <h3>
-                        More Info
-                    </h3>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                    <button>
-                        More Info
-                    </button>
-                </figcaption>
-            </figure>
+          <h1>{place?.name}</h1>
+          <img src={place?.img} alt="" />
+          <figcaption>
+            <h3 className="d-flex justify-content-between" >
+              <span><i class="fas fa-dollar-sign"></i>{place?.price}</span>
+              <span><i class="far fa-clock"></i> {place?.days} Days</span>
+            </h3>
+            <p>{place?.desc.slice(0, 250)}</p>
+            <Link to={`/places/${place?._id}`}><button>
+              <i class="fas fa-shopping-cart me-2"></i> Book Now
+            </button></Link>
+
+          </figcaption>
+        </figure>
 
       </Col>
 

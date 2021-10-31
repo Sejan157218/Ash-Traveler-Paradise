@@ -1,0 +1,14 @@
+.add-container{
+        background-image: url("https://i.ibb.co/qY19gHH/patrick-robert-doyle-eb8dm-XNOGP4-unsplash-1.jpg"),
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+        height: 480px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      
+}
+.form-container input{
+    width: 60%;
+    margin-bottom: 10px;
+}
