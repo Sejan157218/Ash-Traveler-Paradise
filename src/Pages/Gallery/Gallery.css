@@ -1,0 +1,60 @@
+.gallery-container{
+    background-image: url("https://i.ibb.co/sVpKy8Y/vincentas-liskauskas-TPh-Znl2-NEws-unsplash-1.jpg"),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    height: 480px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .gallery-container h1{
+    font-size: 80px;
+      color: rgb(26, 23, 23);
+      margin-top: 11rem;
+  }
+
+  .gallery {
+    display: flex;
+    padding: 2px;
+    transition: 0.3s;
+  }
+  .gallery:hover .gallery__image {
+    filter: grayscale(1);
+  }
+
+  .gallery__link {
+      width: 16rem;
+    margin: 2px;
+    overflow: hidden;
+  }
+  .gallery__link:hover .gallery__image {
+    filter: grayscale(0);
+  }
+  .gallery__link:hover .gallery__caption {
+    opacity: 1;
+  }
+  .gallery__thumb {
+    position: relative;
+  }
+  .gallery__image {
+    display: block;
+    width: 100%;
+    transition: 0.3s;
+  }
+  .gallery__image:hover {
+    transform: scale(1.1);
+  }
+  .gallery__caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px 15px 15px;
+    width: 100%;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    color: white;
+    opacity: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    transition: 0.3s;
+  }

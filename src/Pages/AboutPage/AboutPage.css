@@ -1,0 +1,18 @@
+.about-container{
+    background-image: url("https://i.ibb.co/WfdyMsh/daniel-frank-jqvd-Db-Xo-DI-unsplash.jpg"),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    height: 480px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .about-container h1{
+    font-size: 50px;
+      color: #ffff;
+  }
+
+.our-story{
+    font-size: 50px;
+    text-align: center;
+  }

@@ -17,12 +17,14 @@ import Login from './Pages/Share/Login/Login';
 import Header from './Pages/Share/Header/Header';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 import Footer from './Pages/Share/Footer/Footer';
-import AboutUS from './Pages/Home/AboutUS/AboutUS';
-import Contactus from './Pages/Home/ContactUS/Contactus';
+import Blogs from './Pages/Blogs/Blogs';
+import AboutPage from './Pages/AboutPage/AboutPage';
+import Contactus from './Pages/ContactUS/Contactus';
+import Gallery from './Pages/Gallery/Gallery';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <AuthProvider>
         <Router>
           <Header></Header>
@@ -56,13 +58,19 @@ function App() {
               <Addplaces></Addplaces>
             </Route>
             <Route path="/aboutus">
-            <AboutUS></AboutUS>
+           <AboutPage></AboutPage>
             </Route>
             <Route path="/orders">
               <AllOrders></AllOrders>
             </Route>
             <Route path="/contact">
              <Contactus></Contactus>
+            </Route>
+            <Route path="/blogs">
+             <Blogs></Blogs>
+            </Route>
+            <Route path="/gallery">
+            <Gallery></Gallery>
             </Route>
             <PrivateRoute path="/myorders">
               <MyOrder></MyOrder>
