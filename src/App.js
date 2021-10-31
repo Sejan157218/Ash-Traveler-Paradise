@@ -21,6 +21,7 @@ import Blogs from './Pages/Blogs/Blogs';
 import AboutPage from './Pages/AboutPage/AboutPage';
 import Contactus from './Pages/ContactUS/Contactus';
 import Gallery from './Pages/Gallery/Gallery';
+import NotFound from './Pages/Share/NotFound/NotFound';
 
 function App() {
   return (
@@ -35,15 +36,15 @@ function App() {
             <PrivateRoute path="/places/:id">
               <PlaceOrder></PlaceOrder>
             </PrivateRoute>
-            <Route path="/addplaces">
+            <PrivateRoute path="/addplaces">
               <Addplaces></Addplaces>
-            </Route>
+            </PrivateRoute>
             <Route path="/aboutus">
               <AboutPage></AboutPage>
             </Route>
-            <Route path="/orders">
+            <PrivateRoute path="/orders">
               <AllOrders></AllOrders>
-            </Route>
+            </PrivateRoute>
             <Route path="/contact">
               <Contactus></Contactus>
             </Route>
@@ -58,6 +59,9 @@ function App() {
             </PrivateRoute>
             <Route path="/login">
               <Login></Login>
+            </Route>
+            <Route path="*">
+              <NotFound></NotFound>
             </Route>
           </Switch>
           <Footer></Footer>
