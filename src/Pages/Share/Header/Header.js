@@ -24,13 +24,15 @@ const Header = () => {
                         <Navbar.Text>
                             <Nav className="me-auto">
                                 {
-                                    user.email ?
+                                 user.email  ?
                                         <Nav className="me-auto">
                                             <Nav.Link as={HashLink} to="/">{user?.displayName}</Nav.Link>
                                             <NavDropdown style={{ background: `url('${user?.photoURL}') no-repeat center center`, borderRadius: "50%", width: "40px" }}>
-                                                <NavDropdown.Item as={HashLink} to="/orders">Manage Booking</NavDropdown.Item>
-                                                <NavDropdown.Item as={HashLink} to="/myorders">My Booking</NavDropdown.Item>
-                                                <NavDropdown.Item as={HashLink} to="/addplaces">Add Places</NavDropdown.Item>
+                                            <NavDropdown.Item as={HashLink} to="/myorders">My Booking</NavDropdown.Item>
+                                                    {
+                                                        user?.email == "sejan7090@gmail.com" && <><NavDropdown.Item as={HashLink} to="/orders">Manage Booking</NavDropdown.Item>
+                                                        <NavDropdown.Item as={HashLink} to="/addplaces">Add Places</NavDropdown.Item></>
+                                                    }
                                                 <NavDropdown.Item as={HashLink} to="" onClick={logout}>Sign out <i class="fas fa-sign-out-alt"></i></NavDropdown.Item>
                                             </NavDropdown>
                                         </Nav>
@@ -40,6 +42,7 @@ const Header = () => {
                                             <Nav.Link as={HashLink} to="/login">Sign in <i class="fas fa-sign-in-alt"></i></Nav.Link>
                                         </Nav>
                                 }
+                                
                             </Nav>
                         </Navbar.Text>
 

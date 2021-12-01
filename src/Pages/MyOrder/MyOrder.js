@@ -26,7 +26,8 @@ const MyOrder = () => {
                 .then(function (response) {
                     if (response.data.deletedCount) {
                         alert('deleted successfully')
-                        setDeleteItem(response.data.deletedCount);
+                        setDeleteItem(true);
+                        setDeleteItem('')
                     }
                 })
         }
@@ -49,12 +50,12 @@ const MyOrder = () => {
                                 </h3>
                                 <p>{order?.desc.slice(0, 250)}</p>
                                 <div className="d-flex justify-content-between">
-                                <button>
-                                    {order?.status}
-                                </button>
-                                <button onClick={() => handlerToDelete(order?._id)}>
-                                    <i class="fas fa-trash"></i>  Delete Now
-                                </button>
+                                    <button>
+                                        {order?.status}
+                                    </button>
+                                    <button onClick={() => handlerToDelete(order?._id)}>
+                                        <i class="fas fa-trash"></i>  Delete Now
+                                    </button>
                                 </div>
 
                             </figcaption>

@@ -25,13 +25,14 @@ const AllOrders = () => {
     }, [modifiedCount, deleteItem]);
 
     const handlerToDelete = id => {
-        const proceed = window.confirm('Are You sure to delete');
+        const proceed = window.confirm('Are You Confirm to delete');
         if (proceed) {
             axios.delete(`https://spooky-asylum-59819.herokuapp.com/orders/${id}`)
                 .then(function (response) {
                     if (response.data.deletedCount) {
                         alert('deleted successfully')
-                        setDeleteItem(response.data.deletedCount);
+                        setDeleteItem(true);
+                        setDeleteItem('')
                     }
                 })
         }

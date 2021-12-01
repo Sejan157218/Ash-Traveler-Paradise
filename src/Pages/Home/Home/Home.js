@@ -16,7 +16,7 @@ const Home = () => {
             .then(res => res.json())
             .then(data => {
                 setPlaces(data);
-                setLoading(false)
+                setLoading(false);
             })
 
     }, []);

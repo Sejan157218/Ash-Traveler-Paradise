@@ -24,11 +24,11 @@ const Addplaces = () => {
 
                 <h1 className="my-3">Add Offers</h1>
                 <form onSubmit={handleSubmit(onSubmit)}>
-                    <input type="text" {...register("name")} placeholder="Place Name" />
+                    <input type="text" {...register("name")} placeholder="Product Name" />
                     <br />
                     <input type="number" {...register("price")} placeholder="Travel Cost" />
                     <br />
-                    <input type="text" {...register("rating")} placeholder="Rating" />
+                    <input type="text" {...register("rating")} placeholder="Rating Will Be 1-5" />
                     <br />
                     <input type="number" {...register("days")} placeholder="Days" />
                     <br />

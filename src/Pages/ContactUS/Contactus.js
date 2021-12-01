@@ -46,9 +46,9 @@ const Contactus = () => {
                             <Col><div className="direct-contact-container">
 
                                 <ul className="contact-list">
-                                    <li className="list-item"><i className="fa fa-map-marker fa-2x"><span className="contact-text place">Mohammadpur,Dhaka,Bangladesh</span></i></li>
+                                    <li className="list-item"><i className="fa fa-map-marker fa-2x"><span className="contact-text place">Mohammadpur,Dhaka</span></i></li>
 
-                                    <li className="list-item"><i className="fa fa-phone fa-2x"><span className="contact-text phone">(212) 555-2368</span></i></li>
+                                    <li className="list-item"><i className="fa fa-phone fa-2x"><span className="contact-text phone">(111) 111-111</span></i></li>
 
                                     <li className="list-item"><i className="fa fa-envelope fa-2x"><span className="contact-text gmail">info@gmail.com</span></i></li>
 
